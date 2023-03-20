@@ -40,9 +40,57 @@ public class MainActivity extends AppCompatActivity {
                 int somatotal=num1+num2;
                 etresultado.setText(String.valueOf(somatotal));
 
-                Intent intent = new Intent(MainActivity.this, Tela2.class);
+                /*Intent intent = new Intent(MainActivity.this, Tela2.class);
                 intent.putExtra("resultado", somatotal);
-                startActivity(intent);
+                startActivity(intent); */
+
+            }
+        });
+        bsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String numero1 = etn1.getText().toString();
+                String numero2 = etn2.getText().toString();
+                int num1 = Integer.parseInt(numero1);
+                int num2 = Integer.parseInt(numero2);
+                int somatotal=num1-num2;
+                etresultado.setText(String.valueOf(somatotal));
+
+                /*Intent intent = new Intent(MainActivity.this, Tela2.class);
+                intent.putExtra("resultado", somatotal);
+                startActivity(intent); */
+
+            }
+        });
+        bmulti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String numero1 = etn1.getText().toString();
+                String numero2 = etn2.getText().toString();
+                int num1 = Integer.parseInt(numero1);
+                int num2 = Integer.parseInt(numero2);
+                int somatotal=num1*num2;
+                etresultado.setText(String.valueOf(somatotal));
+
+                /*Intent intent = new Intent(MainActivity.this, Tela2.class);
+                intent.putExtra("resultado", somatotal);
+                startActivity(intent); */
+
+            }
+        });
+        bdiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String numero1 = etn1.getText().toString();
+                String numero2 = etn2.getText().toString();
+                int num1 = Integer.parseInt(numero1);
+                int num2 = Integer.parseInt(numero2);
+                int somatotal=num1/num2;
+                etresultado.setText(String.valueOf(somatotal));
+
+                /*Intent intent = new Intent(MainActivity.this, Tela2.class);
+                intent.putExtra("resultado", somatotal);
+                startActivity(intent); */
 
             }
         });
